@@ -14,7 +14,7 @@ function include_css($cssfile)
 include_css("login.css");
 $display_warn=1;
 ?>
-
+<link rel="stylesheet" href="./login.css">
 <script langudage="Javascript">
 var g_timeout=0;
 var g_timer=null;
@@ -265,4 +265,5 @@ if (file_exists($bottom_logo)) {
 
 </body>
 </html>
+
 <?php ob_flush();?>
