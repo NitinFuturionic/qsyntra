@@ -4,16 +4,7 @@ header('Content-Type:text/html; charset=UTF-8'); header("Cache-Control: no-cache
 ?>
 <title> Login </title>
 
-// <?php
-// function include_css($cssfile)
-// {
-//   global $btstamp;
-//   $cssfile .= "?$btstamp";
-//   echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"$cssfile\"/>\n";
-// }
-// include_css("login.css");
-// $display_warn=1;
-// ?>
+
 <link rel="stylesheet" href="./login.css">
 <script langudage="Javascript">
 var g_timeout=0;
@@ -267,4 +258,5 @@ if (file_exists($bottom_logo)) {
 </html>
 
 <?php ob_flush();?>
+
 
