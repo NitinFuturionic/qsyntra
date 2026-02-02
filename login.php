@@ -148,11 +148,7 @@ function togglePassword(){
 
 <body onload="init()">
 
-<?php if(file_exists("/var/run/wp_auth_login.cfg")): ?>
-  <div style="text-align:right; padding:12px 20px;">
-    <a href="javascript:p_pwd_change();">Update HTTP/S Proxy User Password</a>
-  </div>
-<?php endif; ?>
+
 
 <?php
 $default_warn_msg = "This computer system is for authorized users only. All activity is logged and regularly monitored by systems personnel. Unauthorized or improper use of this system may result in civil and criminal penalties and administrative or disciplinary action, as appropriate. Anyone using this system consents to these terms.";
@@ -236,11 +232,11 @@ if (file_exists($custom_warn_msg_file)) {
       </div>
 
       <!-- WARNING BELOW BUTTON -->
-      <?php if ($display_warn != 0): ?>
-        <div class="warn_msg warn_inside">
-          <span class="warn-label">WARNING!</span> <?php echo $warn_msg;?>
-        </div>
-      <?php endif; ?>
+     <div class="warn_msg warn_inside">
+  <span class="warn-label">WARNING!</span>
+  This computer system is for authorized users only. All activity is logged and regularly monitored by systems personnel. Unauthorized or improper use may result in civil/criminal penalties. By using this system you consent to these terms.
+</div>
+
 
     </div>
 
@@ -258,5 +254,6 @@ if (file_exists($bottom_logo)) {
 </html>
 
 <?php ob_flush();?>
+
 
 
